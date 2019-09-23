@@ -9,12 +9,13 @@ curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools
 git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-git clone https://github.com/junegunn/fzf.git ${ZSH}/custom/plugins/fzf ${ZSH}/custom/plugins/fzf/install --bin
+git clone https://github.com/junegunn/fzf.git ${ZSH}/custom/plugins/fzf
+${ZSH}/custom/plugins/fzf/install --bin
 git clone https://github.com/Treri/fzf-zsh.git ${ZSH}/custom/plugins/fzf-zsh
 
-sed -i "s/plugins=(git)/plugins=(git\n
-         fast-syntax-highlighting\n
-         zsh-autosuggestions\n
-         history-substring-search\n
-         fzf-zsh\n
+sed -i "s/plugins=(git)/plugins=(git\n\
+         fast-syntax-highlighting\n\
+         zsh-autosuggestions\n\
+         history-substring-search\n\
+         fzf-zsh\n\
          colored-man-pages)/" $HOME/.zshrc
