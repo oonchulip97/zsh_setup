@@ -19,3 +19,5 @@ sed -i "s/plugins=(git)/plugins=(git\n\
          history-substring-search\n\
          fzf-zsh\n\
          colored-man-pages)/" $HOME/.zshrc
+
+echo "alias glg=\"git log --graph --stat\"" >> $HOME/.zshrc
