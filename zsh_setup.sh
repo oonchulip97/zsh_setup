@@ -1,9 +1,12 @@
 #!/bin/bash
 
+# Install prerequisites
+apt install curl
+
 # Install zsh and oh-my-zsh
 apt install zsh
-chsh -s $(which zsh)
-curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+chsh -s $(which zsh) $(whoami)
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install zsh plugins
 git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
