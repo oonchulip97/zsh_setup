@@ -10,7 +10,9 @@ Run the following in your terminal:
 cd ~
 git clone https://github.com/oonchulip97/zsh_setup.git
 cd ~/zsh_setup
-./zsh_setup.sh
+sudo ./zsh_setup.sh
 ```
 
 Have fun terminal-ing :)
+
+WARNING: This configuration file will overwrite your configuration file if you have any!
