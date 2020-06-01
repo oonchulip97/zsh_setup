@@ -23,4 +23,5 @@ sed -i "s/plugins=(git)/plugins=(git\n\
          fzf-zsh\n\
          colored-man-pages)/" $HOME/.zshrc
 
+echo "export TERM=\"xterm-256color\"" >> $HOME/.zshrc
 echo "alias glg=\"git log --graph --stat\"" >> $HOME/.zshrc
