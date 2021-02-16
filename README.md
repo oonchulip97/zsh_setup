@@ -10,7 +10,7 @@ Run the following in your terminal:
 cd ~
 git clone https://github.com/oonchulip97/zsh_setup.git
 cd ~/zsh_setup
-sudo ./zsh_setup.sh
+source ./zsh_setup.sh
 ```
 
 Have fun terminal-ing :)
